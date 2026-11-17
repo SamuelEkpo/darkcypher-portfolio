@@ -1,7 +1,10 @@
 
 import Image from "next/image";
+
 import SkillsSection from "../components/SkillsSection";
+
 import ProjectsSection from "../components/ProjectsSection";
+
 import DarkCypherMethod from "../components/sections/DarkCypherMethod";
 
 const navigation = [
@@ -24,7 +27,7 @@ const expertise = [
     number: "02",
     title: "Web Development",
     description:
-      "Developing full-stack web applications and digital platforms using modern frontend and backend technologies, APIs, and database systems.",
+      "Developing responsive websites and full-stack web applications using modern frontend and backend technologies, APIs, and database systems.",
   },
   {
     number: "03",
@@ -36,7 +39,7 @@ const expertise = [
     number: "04",
     title: "AI & Automation",
     description:
-      "Working with AI technologies, intelligent agents, machine learning concepts, and automation workflows to develop useful technology solutions.",
+      "Building AI-powered workflows and exploring intelligent agents, integrations, and automation solutions that help simplify repetitive tasks.",
   },
 ];
 
@@ -58,7 +61,11 @@ function ContactIcon({ name }: { name: ContactIconName }) {
       return (
         <svg {...commonProps} stroke="currentColor" strokeWidth="1.7">
           <rect x="3" y="5" width="18" height="14" rx="2" />
-          <path d="m4 7 8 6 8-6" strokeLinecap="round" strokeLinejoin="round" />
+          <path
+            d="m4 7 8 6 8-6"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
         </svg>
       );
 
@@ -112,11 +119,14 @@ const contactLinks: {
   {
     name: "whatsapp",
     label: "WhatsApp",
-    href: "https://wa.me/2347078222486?text=Hello%20Samuel%2C%20I%20visited%20your%20DarkCypher%20portfolio%20and%20would%20like%20to%20connect.",
+    href: "https://wa.me/2347078222486?text=Hello%20Samuel%2C%20I%20visited%20your%20DarkCypher%20portfolio%20and%20would%20like%20to%20discuss%20a%20project.",
     primary: true,
     external: true,
   },
 ];
+
+const whatsappProjectLink =
+  "https://wa.me/2347078222486?text=Hello%20Samuel%2C%20I%20visited%20your%20DarkCypher%20portfolio%20and%20would%20like%20to%20discuss%20a%20project.";
 
 export default function Home() {
   return (
@@ -136,8 +146,13 @@ export default function Home() {
           ))}
         </nav>
 
-        <a className="header-cta" href="#contact">
-          Let&apos;s talk <span aria-hidden="true">&#8599;</span>
+        <a
+          className="header-cta"
+          href={whatsappProjectLink}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Discuss a project <span aria-hidden="true">&#8599;</span>
         </a>
       </header>
 
@@ -146,29 +161,35 @@ export default function Home() {
         <div className="hero-content">
           <p className="eyebrow">
             <span className="status-dot" />
-            SOFTWARE ENGINEERING &#183; TECHNOLOGY &#183; SECURITY
+            SOFTWARE ENGINEERING &#183; WEB DEVELOPMENT &#183; AI AUTOMATION
           </p>
 
           <h1>
-            Building the
+            I build websites,
             <br />
-            <span>digital future.</span>
+            <span>applications &amp; AI solutions.</span>
           </h1>
 
           <p className="hero-description">
-            I&apos;m Samuel Ekpo, known professionally as DarkCypher.
-            I&apos;m focused on software engineering, exploring
-            cybersecurity, and building meaningful digital and
-            intelligent technology solutions.
+            I&apos;m Samuel Ekpo, known professionally as DarkCypher. I develop
+            modern websites, full-stack applications, and practical AI
+            automation solutions. I work with businesses, individuals, and
+            teams to turn ideas and technical requirements into useful digital
+            products.
           </p>
 
           <div className="hero-actions">
-            <a className="button-primary" href="#projects">
-              Explore my work <span aria-hidden="true">&#8599;</span>
+            <a
+              className="button-primary"
+              href={whatsappProjectLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Discuss a project <span aria-hidden="true">&#8599;</span>
             </a>
 
-            <a className="button-secondary" href="#about">
-              Discover my story
+            <a className="button-secondary" href="#projects">
+              View my work
             </a>
           </div>
         </div>
@@ -220,24 +241,25 @@ export default function Home() {
           </p>
 
           <p>
-            My technical interests span software development, web
+            My technical work and interests span software development, web
             technologies, artificial intelligence, automation, computer
-            networking, and cybersecurity. I enjoy exploring how systems
-            are designed, how applications are built, and how digital
-            environments can be made more reliable and secure.
+            networking, and cybersecurity. I enjoy designing applications,
+            developing backend systems, integrating APIs, and finding practical
+            ways to make digital products more useful and reliable.
           </p>
 
           <p>
-            My journey is driven by continuous learning, practical
-            experimentation, and building solutions that have a meaningful
-            purpose. Through my involvement with FIOS Grid, I also
-            contribute to technology education and digital innovation.
+            I am interested in working with businesses, individuals, and
+            development teams that need help building websites, web
+            applications, or automation workflows. Through my involvement with
+            FIOS Grid, I also contribute to technology education and digital
+            innovation.
           </p>
 
           <p>
-            My long-term vision is to become a highly skilled software
-            engineer and ethical hacker, build useful technology platforms,
-            and contribute to a safer and more innovative digital world.
+            My long-term vision is to become a highly skilled software engineer
+            and ethical hacker, build useful technology platforms, and
+            contribute to a safer and more innovative digital world.
           </p>
         </div>
       </section>
@@ -255,7 +277,8 @@ export default function Home() {
           </h2>
 
           <p className="section-description">
-            The technologies and disciplines shaping my professional journey.
+            Technical disciplines and services I work with to solve problems
+            and build digital solutions.
           </p>
         </div>
 
@@ -290,17 +313,22 @@ export default function Home() {
         <p className="eyebrow">06 / CONTACT</p>
 
         <h2>
-          Have an idea?
+          Have a project in mind?
           <br />
-          <span>Let&apos;s build something meaningful.</span>
+          <span>Let&apos;s discuss how to build it.</span>
         </h2>
 
         <p>
-          Whether you have a project in mind, want to discuss technology,
-          or are interested in collaboration, I&apos;d be glad to hear from you.
+          Need a website, a web application, or an AI-powered automation
+          workflow? Share what you are working on, the problem you want to
+          solve, and what you need. I&apos;d be glad to discuss the project and
+          explore how I can help.
         </p>
 
-        <div className="contact-links" aria-label="Contact and social profiles">
+        <div
+          className="contact-links"
+          aria-label="Contact and social profiles"
+        >
           {contactLinks.map((link) => (
             <a
               key={link.name}

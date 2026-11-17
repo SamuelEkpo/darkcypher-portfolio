@@ -23,7 +23,7 @@ export const projects: Project[] = [
     category: "Cybersecurity Engineering",
     status: "In Progress",
     description:
-      "A defensive cybersecurity platform being developed to centralise asset monitoring, vulnerability assessment, threat monitoring, incident management, and security analytics.",
+      "A defensive cybersecurity platform in development, designed to give security teams a central place to monitor authorised assets, assess vulnerabilities, track potential threats, manage incidents, and review security activity.",
     technologies: [
       "Python",
       "FastAPI",
@@ -32,11 +32,11 @@ export const projects: Project[] = [
       "PostgreSQL",
     ],
     highlights: [
-      "Authorised asset monitoring",
-      "Vulnerability assessment",
-      "Threat detection and monitoring",
-      "Security incident management",
-      "Security analytics",
+      "Authorised asset discovery and monitoring",
+      "Vulnerability assessment and security analysis",
+      "Threat monitoring and detection workflows",
+      "Security incident tracking and management",
+      "Centralised security analytics",
     ],
     githubUrl:
       "https://github.com/SamuelEkpo/sentineldesk-security-monitor",
@@ -47,7 +47,7 @@ export const projects: Project[] = [
     category: "Full-Stack Software Engineering",
     status: "In Progress",
     description:
-      "A digital services ecosystem connecting clients with professionals through service requests, automated quotations, project management, and technology education.",
+      "A full-stack digital services ecosystem being developed to connect clients with digital professionals. The platform brings together service requests, quotation workflows, project coordination, online payments, and technology education.",
     technologies: [
       "Next.js",
       "React",
@@ -58,12 +58,12 @@ export const projects: Project[] = [
       "Paystack",
     ],
     highlights: [
-      "Client service request management",
-      "Automated assessment and quotations",
-      "Administrative dashboards",
-      "Project tracking and updates",
-      "Technology Academy",
-      "Payment integration",
+      "Client registration and service request workflows",
+      "Automated request assessment and quotation generation",
+      "Administrative management dashboards",
+      "Client project tracking and progress updates",
+      "FIOS Grid Tech Academy",
+      "Online payment integration",
     ],
   },
   {
@@ -72,7 +72,7 @@ export const projects: Project[] = [
     category: "Airline Booking & Management",
     status: "Under Review & Analysis",
     description:
-      "An airline technology platform under analysis, designed to connect passenger reservations with administrative and operational airline management.",
+      "An airline booking and management platform currently undergoing review and technical analysis. Its proposed scope covers passenger reservations, flight administration, booking workflows, and operational management.",
     technologies: [
       "Next.js",
       "React",
@@ -83,9 +83,9 @@ export const projects: Project[] = [
     ],
     highlights: [
       "Flight search and fare comparison",
-      "Seat selection and reservations",
-      "Transactional booking management",
-      "Payment verification",
+      "Passenger seat selection and reservations",
+      "Booking lifecycle and transaction management",
+      "Payment verification workflows",
       "Flight and aircraft administration",
       "Passenger and crew management",
     ],
@@ -96,7 +96,7 @@ export const projects: Project[] = [
     category: "AI Engineering",
     status: "Pre-Launch Review",
     description:
-      "An AI engineering project exploring intelligent development systems that can understand codebases, assist with programming, analyse architectures, and automate software development workflows.",
+      "An AI engineering initiative exploring intelligent software development systems. Its proposed direction includes codebase understanding, programming assistance, software architecture analysis, and automated development workflows using local and cloud-based AI models.",
     technologies: [
       "Artificial Intelligence",
       "Transformer Models",
@@ -105,11 +105,12 @@ export const projects: Project[] = [
       "Cloud AI",
     ],
     highlights: [
-      "AI-assisted programming",
-      "Software architecture analysis",
-      "Code generation and debugging",
-      "Hybrid local and cloud architecture",
-      "Custom Transformer exploration",
+      "AI-assisted programming workflows",
+      "Codebase understanding and analysis",
+      "Software architecture exploration",
+      "Code generation and debugging assistance",
+      "Hybrid local and cloud AI architecture",
+      "Custom Transformer model research",
     ],
   },
 ];

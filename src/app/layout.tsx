@@ -14,12 +14,17 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteTitle = "DarkCypher | Software Engineer & Ethical Hacker";
+const siteUrl = "https://darkcypher-portfolio.vercel.app";
+
+const siteTitle =
+  "DarkCypher | Software Engineer, Web Developer & AI Automation";
 
 const siteDescription =
-  "Explore the portfolio of Samuel Ekpo, known as DarkCypher. Discover software engineering projects, web development, cybersecurity, ethical hacking, AI, and technology innovation.";
+  "Samuel Ekpo, known as DarkCypher, is a software engineer building websites, full-stack applications, and AI automation solutions. Explore his projects in software engineering, web development, and cybersecurity.";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+
   title: {
     default: siteTitle,
     template: "%s | DarkCypher",
@@ -39,19 +44,25 @@ export const metadata: Metadata = {
 
   publisher: "DarkCypher",
 
+  alternates: {
+    canonical: "/",
+  },
+
   keywords: [
     "DarkCypher",
     "Samuel Ekpo",
     "Software Engineer",
-    "Aspiring Ethical Hacker",
-    "Web Development",
-    "Full-Stack Development",
-    "Cybersecurity",
-    "Penetration Testing",
-    "Artificial Intelligence",
+    "Web Developer",
+    "Full-Stack Developer",
+    "Next.js Developer",
+    "React Developer",
     "AI Automation",
+    "AI Integration",
+    "Cybersecurity",
+    "Ethical Hacking",
     "Programming",
-    "Technology Innovation",
+    "Software Development",
+    "Website Development",
   ],
 
   category: "technology",
@@ -71,6 +82,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_NG",
+    url: siteUrl,
     siteName: "DarkCypher",
     title: siteTitle,
     description: siteDescription,
@@ -80,7 +92,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: siteTitle,
     description: siteDescription,
-    creator: "@Sterling_Tech19",
+    creator: "@Blackvillian187",
   },
 };
 

@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: ProjectPageProps) {
   }
 
   return {
-    title: `${project.name} | DarkCypher Projects`,
+    title: `${project.name} | DarkCypher`,
     description: project.description,
   };
 }
@@ -41,11 +41,19 @@ export default async function ProjectDetailPage({
     notFound();
   }
 
+  const statusClass =
+    project.status === "In Progress"
+      ? "project-status-progress"
+      : project.status === "Under Review & Analysis"
+        ? "project-status-review"
+        : "project-status-prelaunch";
+
   return (
     <main className="project-detail-page">
       <div className="project-detail-container">
         <Link href="/#projects" className="project-back-link">
-          <span aria-hidden="true">←</span> Back to selected projects
+          <span aria-hidden="true">←</span>
+          Back to selected projects
         </Link>
 
         <header className="project-detail-header">
@@ -59,15 +67,7 @@ export default async function ProjectDetailPage({
 
           <h1>{project.name}</h1>
 
-          <span
-            className={`project-status ${
-              project.status === "In Progress"
-                ? "project-status-progress"
-                : project.status === "Under Review & Analysis"
-                  ? "project-status-review"
-                  : "project-status-prelaunch"
-            }`}
-          >
+          <span className={`project-status ${statusClass}`}>
             {project.status}
           </span>
 
@@ -77,9 +77,18 @@ export default async function ProjectDetailPage({
         </header>
 
         <section className="project-detail-section">
-          <p className="eyebrow">01 / PROJECT OVERVIEW</p>
-          <h2>About this project</h2>
+          <p className="eyebrow">01 / OVERVIEW</p>
+          <h2>Understanding the project</h2>
+
           <p>{project.description}</p>
+
+          <p>
+            This project forms part of my ongoing work in software
+            engineering and digital product development. The scope,
+            implementation priorities, and technical decisions are
+            guided by the project&apos;s objectives and current development
+            stage.
+          </p>
         </section>
 
         <section className="project-detail-section">
@@ -88,10 +97,14 @@ export default async function ProjectDetailPage({
 
           <div className="project-detail-focus-grid">
             {project.highlights.map((highlight, index) => (
-              <article key={highlight} className="project-focus-card">
+              <article
+                key={highlight}
+                className="project-focus-card"
+              >
                 <span>
                   {String(index + 1).padStart(2, "0")}
                 </span>
+
                 <h3>{highlight}</h3>
               </article>
             ))}
@@ -102,6 +115,11 @@ export default async function ProjectDetailPage({
           <p className="eyebrow">03 / TECHNOLOGY</p>
           <h2>Technologies and tools</h2>
 
+          <p>
+            The following technologies are associated with this
+            project&apos;s development.
+          </p>
+
           <div className="project-technologies project-detail-technologies">
             {project.technologies.map((technology) => (
               <span key={technology}>{technology}</span>
@@ -110,10 +128,15 @@ export default async function ProjectDetailPage({
         </section>
 
         <section className="project-detail-section project-detail-links">
-          <p className="eyebrow">04 / EXPLORE</p>
-          <h2>Project resources</h2>
+          <p className="eyebrow">04 / PROJECT RESOURCES</p>
+          <h2>Explore the project</h2>
 
-          {project.githubUrl ? (
+          <p>
+            Explore the available project resources and development
+            materials.
+          </p>
+
+          {project.githubUrl && (
             <a
               href={project.githubUrl}
               target="_blank"
@@ -122,13 +145,16 @@ export default async function ProjectDetailPage({
             >
               View GitHub Repository ↗
             </a>
-          ) : (
-            <p>
-              A public repository has not been linked for this project yet.
+          )}
+
+          {!project.githubUrl && (
+            <p className="project-resource-note">
+              A public repository has not been linked for this
+              project yet.
             </p>
           )}
 
-          {project.liveUrl ? (
+          {project.liveUrl && (
             <a
               href={project.liveUrl}
               target="_blank"
@@ -137,16 +163,20 @@ export default async function ProjectDetailPage({
             >
               Visit Live Project ↗
             </a>
-          ) : (
+          )}
+
+          {!project.liveUrl && (
             <p className="project-resource-note">
               A live demonstration is not currently available.
             </p>
           )}
         </section>
 
-        <Link href="/#projects" className="project-back-link">
-          ← Return to all projects
-        </Link>
+        <div className="project-detail-footer">
+          <Link href="/#projects" className="project-back-link">
+            ← Return to all projects
+          </Link>
+        </div>
       </div>
     </main>
   );
