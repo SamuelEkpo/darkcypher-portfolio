@@ -22,6 +22,8 @@ const siteTitle =
 const siteDescription =
   "Samuel Ekpo, known as DarkCypher, is a software engineer building websites, full-stack applications, and AI automation solutions. Explore his projects in software engineering, web development, and cybersecurity.";
 
+const socialPreviewImage = "/images/darkcypher-social-preview.png";
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
@@ -86,13 +88,27 @@ export const metadata: Metadata = {
     siteName: "DarkCypher",
     title: siteTitle,
     description: siteDescription,
+    images: [
+      {
+        url: socialPreviewImage,
+        width: 1200,
+        height: 630,
+        alt: "DarkCypher — Software Engineer, Developer and Cybersecurity Enthusiast",
+      },
+    ],
   },
 
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: siteTitle,
     description: siteDescription,
     creator: "@Blackvillian187",
+    images: [
+      {
+        url: socialPreviewImage,
+        alt: "DarkCypher — Software Engineer, Developer and Cybersecurity Enthusiast",
+      },
+    ],
   },
 };
 
