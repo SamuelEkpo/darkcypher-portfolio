@@ -2,9 +2,7 @@
 import Image from "next/image";
 
 import SkillsSection from "../components/SkillsSection";
-
 import ProjectsSection from "../components/ProjectsSection";
-
 import DarkCypherMethod from "../components/sections/DarkCypherMethod";
 
 const navigation = [
@@ -13,6 +11,7 @@ const navigation = [
   { label: "Method", href: "#method" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
+  { label: "Ventures", href: "#ventures" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -308,9 +307,231 @@ export default function Home() {
       {/* Projects */}
       <ProjectsSection />
 
+      {/* Ventures — DAXORA DIGITAL */}
+      <section
+        className="ventures-section section-container"
+        id="ventures"
+      >
+        <div className="section-heading">
+          <p className="eyebrow">07 / OUR VENTURE</p>
+
+          <h2>
+            Building a technology ecosystem.
+            <span> Creating opportunities.</span>
+          </h2>
+
+          <p className="section-description">
+            Beyond individual projects, I am building a technology company
+            focused on digital solutions, professional talent, and technology
+            education.
+          </p>
+        </div>
+
+        <article className="ventures-card">
+          {/* Company identity */}
+          <div className="ventures-card-header">
+            <span className="ventures-label">
+              Founder-led technology venture
+            </span>
+
+            <span className="ventures-year">
+              EST. 2026
+            </span>
+          </div>
+
+          <div className="ventures-identity">
+            <h3 className="ventures-brand">
+              DAXORA<span>.</span>
+            </h3>
+
+            <p className="ventures-company-name">
+              DAXORA DIGITAL
+            </p>
+
+            <p className="ventures-tagline">
+              Technology That Moves Business Forward.
+            </p>
+          </div>
+
+          {/* Company introduction */}
+          <div className="ventures-introduction">
+            <p className="ventures-description">
+              DAXORA DIGITAL is an online-first technology company built
+              around the belief that technology should create meaningful
+              opportunities, solve practical problems, and help businesses
+              move forward.
+            </p>
+
+            <p className="ventures-description">
+              Our ecosystem brings together digital solutions, professional
+              talent, and technology education. We aim to make useful
+              technology services and learning opportunities more accessible
+              to businesses, individuals, and aspiring technology professionals.
+            </p>
+          </div>
+
+          {/* Company divisions */}
+          <div className="ventures-divisions">
+            <div className="ventures-subheading">
+              <p className="eyebrow">OUR ECOSYSTEM</p>
+
+              <h3>Three connected pillars.</h3>
+
+              <p>
+                Different capabilities working towards one purpose:
+                creating meaningful value through technology.
+              </p>
+            </div>
+
+            <div className="ventures-division-grid">
+              <article className="ventures-division">
+                <span className="ventures-division-number">01</span>
+
+                <div className="ventures-division-icon" aria-hidden="true">
+                  <span>&#9672;</span>
+                </div>
+
+                <h4>Digital Solutions</h4>
+
+                <p>
+                  Technology services designed to help businesses and
+                  individuals establish, improve, and manage their digital
+                  capabilities, presence, and operations.
+                </p>
+
+                <span className="ventures-division-caption">
+                  BUILD · IMPROVE · MANAGE
+                </span>
+              </article>
+
+              <article className="ventures-division">
+                <span className="ventures-division-number">02</span>
+
+                <div className="ventures-division-icon" aria-hidden="true">
+                  <span>&#9678;</span>
+                </div>
+
+                <h4>DAXORA Professionals</h4>
+
+                <p>
+                  Our remote professional network connects clients with
+                  skilled digital professionals and encourages collaboration
+                  across different areas of technology. The network is an
+                  established initiative that continues to grow and develop.
+                </p>
+
+                <span className="ventures-division-caption">
+                  CONNECT · COLLABORATE · GROW
+                </span>
+              </article>
+
+              <article className="ventures-division">
+                <span className="ventures-division-number">03</span>
+
+                <div className="ventures-division-icon" aria-hidden="true">
+                  <span>&#10022;</span>
+                </div>
+
+                <h4>DAXORA Tech Academy</h4>
+
+                <p>
+                  Our online learning division provides technology education
+                  and practical learning opportunities for people who want
+                  to develop their technical knowledge and digital skills.
+                </p>
+
+                <span className="ventures-division-caption">
+                  LEARN · DEVELOP · ADVANCE
+                </span>
+              </article>
+            </div>
+          </div>
+
+          {/* Mission and vision */}
+          <div className="ventures-purpose">
+            <div className="ventures-purpose-item">
+              <span className="ventures-detail-label">
+                OUR MISSION
+              </span>
+
+              <h4>
+                Making technology more accessible and useful.
+              </h4>
+
+              <p>
+                To deliver digital solutions, create professional
+                opportunities, and support the development of technology
+                skills through an interconnected digital ecosystem.
+              </p>
+            </div>
+
+            <div className="ventures-purpose-item">
+              <span className="ventures-detail-label">
+                OUR VISION
+              </span>
+
+              <h4>
+                Building a trusted technology ecosystem.
+              </h4>
+
+              <p>
+                To connect businesses, professionals, and learners while
+                contributing to digital innovation and technological
+                development in Nigeria and internationally.
+              </p>
+            </div>
+          </div>
+
+          {/* Operating model */}
+          <div className="ventures-operating-model">
+            <div className="ventures-operating-heading">
+              <span className="ventures-detail-label">
+                OUR OPERATING MODEL
+              </span>
+
+              <h4>Online-first. Globally minded.</h4>
+            </div>
+
+            <p>
+              DAXORA DIGITAL operates remotely, allowing its digital
+              services, professional collaborations, and online education
+              initiatives to reach people beyond geographical boundaries.
+              Our initial market focus is Nigeria, with an international
+              outlook.
+            </p>
+          </div>
+
+          {/* Leadership */}
+          <div className="ventures-leadership">
+            <span className="ventures-detail-label">
+              FOUNDER &amp; LEADERSHIP
+            </span>
+
+            <h4>Ekpo Samuel Amos</h4>
+
+            <p className="ventures-leadership-role">
+              Founder &amp; Chief Executive Officer
+            </p>
+
+            <p>
+              DAXORA DIGITAL is a founder-led venture established with a
+              long-term commitment to technology, innovation, professional
+              development, and practical digital solutions.
+            </p>
+          </div>
+
+          {/* Company footer */}
+          <div className="ventures-card-footer">
+            <span>DAXORA DIGITAL</span>
+
+            <span>TECHNOLOGY WITH PURPOSE.</span>
+          </div>
+        </article>
+      </section>
+
       {/* Contact */}
       <section className="contact-section section-container" id="contact">
-        <p className="eyebrow">06 / CONTACT</p>
+        <p className="eyebrow">08 / CONTACT</p>
 
         <h2>
           Have a project in mind?
