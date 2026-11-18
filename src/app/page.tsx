@@ -196,7 +196,7 @@ export default function Home() {
         <div className="hero-visual">
           <div className="hero-image-frame">
             <Image
-              src="/images/darkcypher-hacker.jpg"
+              src="/images/darkcypher-social-preview.png"
               alt="Anonymous hooded figure working at multiple computer monitors in a dark room"
               fill
               priority
