@@ -15,7 +15,7 @@ export default function ProjectsSection() {
       id="projects"
     >
       <div className="section-heading">
-        <p className="eyebrow">04 / SELECTED WORK</p>
+        <p className="eyebrow">05 / SELECTED WORK</p>
 
         <h2>
           Ideas into <span>real projects.</span>

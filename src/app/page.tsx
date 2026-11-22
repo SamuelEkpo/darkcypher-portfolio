@@ -307,13 +307,13 @@ export default function Home() {
       {/* Projects */}
       <ProjectsSection />
 
-      {/* Ventures — Sterling Technologies */}
+      {/* Ventures â€” Sterling Technologies */}
       <section
         className="ventures-section section-container"
         id="ventures"
       >
         <div className="section-heading">
-          <p className="eyebrow">07 / OUR VENTURE</p>
+          <p className="eyebrow">06 / OUR VENTURE</p>
 
           <h2>
             Building a technology ecosystem.
@@ -400,7 +400,7 @@ export default function Home() {
                 </p>
 
                 <span className="ventures-division-caption">
-                  BUILD · IMPROVE · MANAGE
+                  BUILD Â· IMPROVE Â· MANAGE
                 </span>
               </article>
 
@@ -421,7 +421,7 @@ export default function Home() {
                 </p>
 
                 <span className="ventures-division-caption">
-                  CONNECT · COLLABORATE · GROW
+                  CONNECT Â· COLLABORATE Â· GROW
                 </span>
               </article>
 
@@ -441,7 +441,7 @@ export default function Home() {
                 </p>
 
                 <span className="ventures-division-caption">
-                  LEARN · DEVELOP · ADVANCE
+                  LEARN Â· DEVELOP Â· ADVANCE
                 </span>
               </article>
             </div>
@@ -531,7 +531,7 @@ export default function Home() {
 
       {/* Contact */}
       <section className="contact-section section-container" id="contact">
-        <p className="eyebrow">08 / CONTACT</p>
+        <p className="eyebrow">07 / CONTACT</p>
 
         <h2>
           Have a project in mind?

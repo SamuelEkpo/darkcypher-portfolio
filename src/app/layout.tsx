@@ -102,7 +102,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteTitle,
     description: siteDescription,
-    creator: "@Blackvillian187",
+    creator: "@Sterling_Tech19",
     images: [
       {
         url: socialPreviewImage,

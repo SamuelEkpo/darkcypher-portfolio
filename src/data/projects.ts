@@ -91,6 +91,27 @@ export const projects: Project[] = [
     ],
   },
   {
+    id: "booksmart",
+    name: "BookSmart",
+    category: "SaaS Product Engineering",
+    status: "In Progress",
+    description:
+      "A business appointment and scheduling platform for service-based businesses. It covers calendar management, customer records, staff assignment, service catalogs, and booking workflows with a modern workspace UI.",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "CSS Modules",
+    ],
+    highlights: [
+      "Appointment calendar with month, week, and day views",
+      "Customer, staff, and service management",
+      "Reusable UI system for tables, modals, and status badges",
+      "New appointment flow with validation and scheduling rules",
+      "Workspace navigation designed for business operators",
+    ],
+  },
+  {
     id: "aethermind",
     name: "AetherMind",
     category: "AI Engineering",
@@ -106,7 +127,6 @@ export const projects: Project[] = [
     ],
     highlights: [
       "AI-assisted programming workflows",
-      "Codebase understanding and analysis",
       "Software architecture exploration",
       "Code generation and debugging assistance",
       "Hybrid local and cloud AI architecture",

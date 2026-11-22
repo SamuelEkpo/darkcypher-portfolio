@@ -30,7 +30,7 @@ export default function SkillsSection() {
     <section className={styles.skillsSection} id="skills">
       <div className={styles.container}>
         <div className={styles.sectionHeading}>
-          <span className={styles.eyebrow}>TECHNICAL CAPABILITIES</span>
+          <span className={styles.eyebrow}>04 / TECHNICAL CAPABILITIES</span>
 
           <h2>
             Skills built through

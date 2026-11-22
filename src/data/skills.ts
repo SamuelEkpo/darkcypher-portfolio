@@ -1,4 +1,3 @@
-
 export type SkillLevel = "hands-on" | "lab" | "familiar";
 
 export interface Skill {
@@ -20,6 +19,60 @@ export const skillLevelLabels: Record<SkillLevel, string> = {
 };
 
 export const skillCategories: SkillCategory[] = [
+  {
+    id: "software-engineering",
+    title: "Software Engineering",
+    description:
+      "Core engineering practices, languages, architecture, and development workflows.",
+    skills: [
+      { name: "TypeScript", level: "hands-on" },
+      { name: "JavaScript", level: "hands-on" },
+      { name: "Python", level: "hands-on" },
+      { name: "Git & GitHub", level: "hands-on" },
+      { name: "Object-Oriented Programming", level: "hands-on" },
+      { name: "REST APIs", level: "hands-on" },
+      { name: "System Design Fundamentals", level: "hands-on" },
+      { name: "Clean Architecture", level: "lab" },
+      { name: "Design Patterns", level: "lab" },
+      { name: "Unit Testing", level: "lab" },
+      { name: "Agile / Iterative Delivery", level: "familiar" },
+    ],
+  },
+  {
+    id: "web-development",
+    title: "Web Development",
+    description:
+      "Frontend and full-stack web application development with modern frameworks and tools.",
+    skills: [
+      { name: "Next.js", level: "hands-on" },
+      { name: "React", level: "hands-on" },
+      { name: "HTML5 & CSS3", level: "hands-on" },
+      { name: "Responsive Design", level: "hands-on" },
+      { name: "Node.js", level: "hands-on" },
+      { name: "Express.js", level: "hands-on" },
+      { name: "PostgreSQL", level: "hands-on" },
+      { name: "Prisma", level: "hands-on" },
+      { name: "Tailwind CSS", level: "lab" },
+      { name: "Authentication & Authorization", level: "lab" },
+      { name: "GraphQL", level: "familiar" },
+    ],
+  },
+  {
+    id: "cybersecurity",
+    title: "Cybersecurity",
+    description:
+      "Application security, defensive practices, and ethical security exploration.",
+    skills: [
+      { name: "Application Security Basics", level: "hands-on" },
+      { name: "OWASP Top 10 Awareness", level: "hands-on" },
+      { name: "Network Fundamentals", level: "hands-on" },
+      { name: "Linux Security Basics", level: "lab" },
+      { name: "Vulnerability Assessment Concepts", level: "lab" },
+      { name: "Penetration Testing Fundamentals", level: "lab" },
+      { name: "Secure Coding Practices", level: "lab" },
+      { name: "Threat Modeling", level: "familiar" },
+    ],
+  },
   {
     id: "cloud-devops",
     title: "Cloud Computing & DevOps",
@@ -129,9 +182,20 @@ export const skillCategories: SkillCategory[] = [
   },
 ];
 
+function countByLevel(level: SkillLevel): number {
+  return skillCategories.reduce(
+    (sum, category) =>
+      sum + category.skills.filter((skill) => skill.level === level).length,
+    0,
+  );
+}
+
 export const skillLevelCounts = {
-  "hands-on": 56,
-  lab: 9,
-  familiar: 2,
-  total: 67,
+  "hands-on": countByLevel("hands-on"),
+  lab: countByLevel("lab"),
+  familiar: countByLevel("familiar"),
+  total: skillCategories.reduce(
+    (sum, category) => sum + category.skills.length,
+    0,
+  ),
 };
