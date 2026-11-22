@@ -307,7 +307,7 @@ export default function Home() {
       {/* Projects */}
       <ProjectsSection />
 
-      {/* Ventures — DAXORA DIGITAL */}
+      {/* Ventures — Sterling Technologies */}
       <section
         className="ventures-section section-container"
         id="ventures"
@@ -341,11 +341,11 @@ export default function Home() {
 
           <div className="ventures-identity">
             <h3 className="ventures-brand">
-              DAXORA<span>.</span>
+              STERLING<span>.</span>
             </h3>
 
             <p className="ventures-company-name">
-              DAXORA DIGITAL
+              Sterling Technologies
             </p>
 
             <p className="ventures-tagline">
@@ -356,7 +356,7 @@ export default function Home() {
           {/* Company introduction */}
           <div className="ventures-introduction">
             <p className="ventures-description">
-              DAXORA DIGITAL is an online-first technology company built
+              Sterling Technologies is an online-first technology company built
               around the belief that technology should create meaningful
               opportunities, solve practical problems, and help businesses
               move forward.
@@ -411,7 +411,7 @@ export default function Home() {
                   <span>&#9678;</span>
                 </div>
 
-                <h4>DAXORA Professionals</h4>
+                <h4>Sterling Professionals</h4>
 
                 <p>
                   Our remote professional network connects clients with
@@ -432,7 +432,7 @@ export default function Home() {
                   <span>&#10022;</span>
                 </div>
 
-                <h4>DAXORA Tech Academy</h4>
+                <h4>Sterling Tech Academy</h4>
 
                 <p>
                   Our online learning division provides technology education
@@ -493,7 +493,7 @@ export default function Home() {
             </div>
 
             <p>
-              DAXORA DIGITAL operates remotely, allowing its digital
+              Sterling Technologies operates remotely, allowing its digital
               services, professional collaborations, and online education
               initiatives to reach people beyond geographical boundaries.
               Our initial market focus is Nigeria, with an international
@@ -514,7 +514,7 @@ export default function Home() {
             </p>
 
             <p>
-              DAXORA DIGITAL is a founder-led venture established with a
+              Sterling Technologies is a founder-led venture established with a
               long-term commitment to technology, innovation, professional
               development, and practical digital solutions.
             </p>
@@ -522,7 +522,7 @@ export default function Home() {
 
           {/* Company footer */}
           <div className="ventures-card-footer">
-            <span>DAXORA DIGITAL</span>
+            <span>Sterling Technologies</span>
 
             <span>TECHNOLOGY WITH PURPOSE.</span>
           </div>
